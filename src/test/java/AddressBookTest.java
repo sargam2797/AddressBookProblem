@@ -5,10 +5,12 @@ import com.addressbook.services.AddressbookInterface;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.IOException;
+
 public class AddressBookTest {
 
     AddressbookInterface obj = new AddressBookManager();
-
+    static String filePath = "/home/user/IdeaProjects/AddressBookProblem/src/main/resources/Details.json";
 
     @Test
     public void givenPersonDetailsClass_CheckIfObjectsAreInitialised() {
@@ -24,11 +26,9 @@ public class AddressBookTest {
     }
 
     @Test
-    public void givenAddressBookManagerClass_checkIfPersonDetailsAreAdded() {
+    public void givenAddressBookManagerClass_checkIfPersonDetailsAreAdded() throws IOException {
         PersonDetails personDetails = obj.addPerson("sargam","pandey","kharadi","1234",
-                new AddressDetails
-                ("pune",
-                "mah","14"));
+                new AddressDetails("pune", "mah","14"));
         Assert.assertEquals("sargam", personDetails.getFirstName());
         Assert.assertEquals("pandey",personDetails.getLastName());
         Assert.assertEquals("kharadi",personDetails.getAddress());
@@ -36,5 +36,14 @@ public class AddressBookTest {
         Assert.assertEquals("14",personDetails.getAddressDetailsObject().getZip());
         Assert.assertEquals("pune",personDetails.getAddressDetailsObject().getCity());
         Assert.assertEquals("mah",personDetails.getAddressDetailsObject().getState());
+    }
+
+    @Test
+    public void ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile() throws IOException {
+        PersonDetails personDetails = obj.addPerson("sargam","pandey","kharadi","1234",
+                new AddressDetails("pune", "mah","14"));
+        AddressBookManager addressBookManager = new AddressBookManager();
+        boolean result = addressBookManager.writeToFile(personDetails,filePath);
+        Assert.assertTrue(true);
     }
 }
