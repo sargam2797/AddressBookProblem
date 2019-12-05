@@ -1,14 +1,14 @@
 package com.addressbook.models;
 
-public class PersonDetailsPojo {
+public class PersonDetails {
     private String firstName;
     private String lastName;
     private String address;
     private String contact;
-    AddressDetailsPojo addressDetailsObject;
+    AddressDetails addressDetailsObject;
 
-    public PersonDetailsPojo(String firstName, String lastName, String address, String contact,
-                             AddressDetailsPojo addressDetailsObject) {
+    public PersonDetails(String firstName, String lastName, String address, String contact,
+                         AddressDetails addressDetailsObject) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -48,11 +48,11 @@ public class PersonDetailsPojo {
         this.contact = contact;
     }
 
-    public AddressDetailsPojo getAddressDetailsObject() {
+    public AddressDetails getAddressDetailsObject() {
         return addressDetailsObject;
     }
 
-    public void setAddressDetailsObject(AddressDetailsPojo addressDetailsObject) {
+    public void setAddressDetailsObject(AddressDetails addressDetailsObject) {
         this.addressDetailsObject = addressDetailsObject;
     }
 

@@ -1,11 +1,11 @@
 package com.addressbook.models;
 
-public class AddressDetailsPojo {
+public class AddressDetails {
     private String city;
     private String state;
     private String zip;
 
-    public AddressDetailsPojo(String city, String state, String zip) {
+    public AddressDetails(String city, String state, String zip) {
         this.city = city;
         this.state = state;
         this.zip = zip;
