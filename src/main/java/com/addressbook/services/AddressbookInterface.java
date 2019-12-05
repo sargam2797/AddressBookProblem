@@ -1,4 +1,4 @@
-package com.addressbook;
+package com.addressbook.services;
 
 public interface AddressbookInterface {
     public void addPerson();
