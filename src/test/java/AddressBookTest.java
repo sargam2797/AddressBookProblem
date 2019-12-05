@@ -60,9 +60,15 @@ public class AddressBookTest {
     }
 
     @Test
-    public void ForPersonDetails_checkIfFileIsCraeted() throws IOException {
+    public void ForPersonDetails_checkIfFileIsCreated() throws IOException {
         String result = obj.createNewFile(filePath,"Details2.json");
         Assert.assertEquals("True",result);
+    }
+
+    @Test
+    public void ForPersonDetails_doesNotCreateFileIfAlreadyExists() throws IOException {
+        String result = obj.createNewFile(filePath,"Details2.json");
+        Assert.assertEquals("False",result);
     }
 
 }
