@@ -5,6 +5,12 @@ public class AddressDetailsPojo {
     private String state;
     private String zip;
 
+    public AddressDetailsPojo(String city, String state, String zip) {
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+    }
+
     public String getCity() {
         return city;
     }
