@@ -7,6 +7,15 @@ public class PersonDetailsPojo {
     private String contact;
     AddressDetailsPojo addressDetailsObject;
 
+    public PersonDetailsPojo(String firstName, String lastName, String address, String contact,
+                             AddressDetailsPojo addressDetailsObject) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+        this.contact = contact;
+        this.addressDetailsObject = addressDetailsObject;
+    }
+
     public String getFirstName() {
         return firstName;
     }
