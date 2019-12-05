@@ -40,6 +40,16 @@ public class AddressBookManager implements AddressbookInterface {
         }
     }
 
+    @Override
+    public String createNewFile(String destinationFolder, String fileName) throws IOException {
+        String fullPath = destinationFolder + fileName;
+        File file = new File(fullPath);
+        if (file.createNewFile())
+            return "True";
+        else
+            return "False";
+    }
+
     public boolean writeToFile(PersonDetails personDetails, String filePath) {
         String JSON_FILE_PATH = filePath;
         Gson gson = new Gson();

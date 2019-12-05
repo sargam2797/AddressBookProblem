@@ -58,4 +58,11 @@ public class AddressBookTest {
         boolean result = obj.isFileAvailable(filePath,"abc.json");
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void ForPersonDetails_checkIfFileIsCraeted() throws IOException {
+        String result = obj.createNewFile(filePath,"Details2.json");
+        Assert.assertEquals("True",result);
+    }
+
 }

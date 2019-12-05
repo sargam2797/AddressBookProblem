@@ -10,6 +10,8 @@ public interface AddressbookInterface {
             addressDetails) throws IOException;
 
     public boolean isFileAvailable(String destinationFolder, String fileName);
+    public String createNewFile(String destinationFolder, String fileName) throws IOException;
+
     public void editPerson();
 
     public void deletePerson();
