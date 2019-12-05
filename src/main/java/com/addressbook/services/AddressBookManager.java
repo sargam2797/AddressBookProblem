@@ -1,10 +1,24 @@
 package com.addressbook.services;
 
-public class AddressBookManager<T> implements AddressbookInterface {
+import com.addressbook.models.AddressDetails;
+import com.addressbook.models.PersonDetails;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class AddressBookManager implements AddressbookInterface {
+
+    List<PersonDetails> list = new ArrayList<>();
 
     @Override
-    public void addPerson() {
-
+    public PersonDetails addPerson(String fname, String lname, String add, String contact,
+                                   AddressDetails addressDetails) {
+        PersonDetails personDetails = new PersonDetails(fname,lname,add,contact,addressDetails);
+        list.add(personDetails);
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println(list.get(i));
+        }
+        return personDetails;
     }
 
     @Override
@@ -26,5 +40,7 @@ public class AddressBookManager<T> implements AddressbookInterface {
     public void sortByZip() {
 
     }
+
+
 
 }

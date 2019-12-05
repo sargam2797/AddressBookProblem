@@ -7,6 +7,9 @@ import org.junit.Test;
 
 public class AddressBookTest {
 
+    AddressbookInterface obj = new AddressBookManager();
+
+
     @Test
     public void givenPersonDetailsClass_CheckIfObjectsAreInitialised() {
         PersonDetails personDetails = new PersonDetails("Sargam", "Pandey", "Kharadi",
@@ -18,5 +21,20 @@ public class AddressBookTest {
         Assert.assertEquals("Pune",personDetails.getAddressDetailsObject().getCity());
         Assert.assertEquals("MAH",personDetails.getAddressDetailsObject().getState());
         Assert.assertEquals("411014",personDetails.getAddressDetailsObject().getZip());
+    }
+
+    @Test
+    public void givenAddressBookManagerClass_checkIfPersonDetailsAreAdded() {
+        PersonDetails personDetails = obj.addPerson("sargam","pandey","kharadi","1234",
+                new AddressDetails
+                ("pune",
+                "mah","14"));
+        Assert.assertEquals("sargam", personDetails.getFirstName());
+        Assert.assertEquals("pandey",personDetails.getLastName());
+        Assert.assertEquals("kharadi",personDetails.getAddress());
+        Assert.assertEquals("1234",personDetails.getContact());
+        Assert.assertEquals("14",personDetails.getAddressDetailsObject().getZip());
+        Assert.assertEquals("pune",personDetails.getAddressDetailsObject().getCity());
+        Assert.assertEquals("mah",personDetails.getAddressDetailsObject().getState());
     }
 }
