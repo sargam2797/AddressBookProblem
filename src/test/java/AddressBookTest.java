@@ -42,8 +42,7 @@ public class AddressBookTest {
     public void ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile() throws IOException {
         PersonDetails personDetails = obj.addPerson("sargam","pandey","kharadi","1234",
                 new AddressDetails("pune", "mah","14"));
-        AddressBookManager addressBookManager = new AddressBookManager();
-        boolean result = addressBookManager.writeToFile(personDetails,filePath);
+        boolean result = obj.writeToFile(personDetails,filePath);
         Assert.assertTrue(true);
     }
 

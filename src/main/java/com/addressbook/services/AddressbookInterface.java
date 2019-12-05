@@ -8,8 +8,10 @@ import java.io.IOException;
 public interface AddressbookInterface {
     public PersonDetails addPerson(String fname, String lname, String add, String contact, AddressDetails
             addressDetails) throws IOException;
+    public boolean writeToFile(PersonDetails personDetails, String filePath);
 
     public boolean isFileAvailable(String destinationFolder, String fileName);
+
     public String createNewFile(String destinationFolder, String fileName) throws IOException;
 
     public void editPerson();
