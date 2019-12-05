@@ -7,6 +7,9 @@ public class PersonDetails {
     private String contact;
     AddressDetails addressDetailsObject;
 
+    public PersonDetails() {
+    }
+
     public PersonDetails(String firstName, String lastName, String address, String contact,
                          AddressDetails addressDetailsObject) {
         this.firstName = firstName;

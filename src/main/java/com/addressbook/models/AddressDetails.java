@@ -5,6 +5,9 @@ public class AddressDetails {
     private String state;
     private String zip;
 
+    public AddressDetails() {
+    }
+
     public AddressDetails(String city, String state, String zip) {
         this.city = city;
         this.state = state;

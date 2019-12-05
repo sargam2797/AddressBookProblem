@@ -1,6 +1,7 @@
 package com.addressbook.services;
 
-public class AddressBookManager implements AddressbookInterface {
+public class AddressBookManager<T> implements AddressbookInterface {
+
     @Override
     public void addPerson() {
 
@@ -25,4 +26,5 @@ public class AddressBookManager implements AddressbookInterface {
     public void sortByZip() {
 
     }
+
 }
