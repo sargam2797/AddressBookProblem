@@ -46,4 +46,15 @@ public class PersonDetailsPojo {
     public void setAddressDetailsObject(AddressDetailsPojo addressDetailsObject) {
         this.addressDetailsObject = addressDetailsObject;
     }
+
+    @Override
+    public String toString() {
+        return "PersonDetailsPojo{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", address='" + address + '\'' +
+                ", contact='" + contact + '\'' +
+                ", addressDetailsObject=" + addressDetailsObject +
+                '}';
+    }
 }
