@@ -52,4 +52,10 @@ public class AddressBookTest {
        boolean result = obj.isFileAvailable(filePath,"Details.json");
        Assert.assertTrue(result);
     }
+
+    @Test
+    public void ForPersonDetails_checkIfFileIsUnAvailable() throws IOException {
+        boolean result = obj.isFileAvailable(filePath,"abc.json");
+        Assert.assertFalse(result);
+    }
 }
