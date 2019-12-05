@@ -66,4 +66,6 @@ public class PersonDetails {
                 ", addressDetailsObject=" + addressDetailsObject +
                 '}';
     }
+
+
 }
