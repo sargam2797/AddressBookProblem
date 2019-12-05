@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-05T13:03:21" hostname="FH400" time="0.089">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-05T13:25:24" hostname="FH400" time="0.003">
   <properties/>
-  <testcase name="ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile" classname="AddressBookTest" time="0.089"/>
-  <system-out><![CDATA[PersonDetailsPojo{firstName='sargam', lastName='pandey', address='kharadi', contact='1234', addressDetailsObject=AddressDetailsPojo{city='pune', state='mah', zip='14'}}
-]]></system-out>
+  <testcase name="ForPersonDetails_checkIfFileIsAvailable" classname="AddressBookTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

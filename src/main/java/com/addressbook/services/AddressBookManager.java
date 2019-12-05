@@ -5,6 +5,7 @@ import com.addressbook.models.PersonDetails;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
@@ -23,9 +24,20 @@ public class AddressBookManager implements AddressbookInterface {
         list.add(personDetails);
         for (int i = 0; i < list.size(); i++) {
             System.out.println(list.get(i));
-            writeToFile(personDetails,filePath);
+           writeToFile(personDetails,filePath);
         }
         return personDetails;
+    }
+
+    @Override
+    public boolean isFileAvailable(String destinationFolder, String fileName) {
+        String fullPath = destinationFolder + fileName;
+        File file = new File(fullPath);
+        if (file.exists()) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public boolean writeToFile(PersonDetails personDetails, String filePath) {

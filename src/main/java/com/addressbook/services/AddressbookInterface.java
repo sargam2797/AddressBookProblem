@@ -9,7 +9,7 @@ public interface AddressbookInterface {
     public PersonDetails addPerson(String fname, String lname, String add, String contact, AddressDetails
             addressDetails) throws IOException;
 
-
+    public boolean isFileAvailable(String destinationFolder, String fileName);
     public void editPerson();
 
     public void deletePerson();

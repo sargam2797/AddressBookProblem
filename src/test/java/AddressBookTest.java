@@ -10,7 +10,7 @@ import java.io.IOException;
 public class AddressBookTest {
 
     AddressbookInterface obj = new AddressBookManager();
-    static String filePath = "/home/user/IdeaProjects/AddressBookProblem/src/main/resources/Details.json";
+    static String filePath = "/home/user/IdeaProjects/AddressBookProblem/src/main/resources/";
 
     @Test
     public void givenPersonDetailsClass_CheckIfObjectsAreInitialised() {
@@ -45,5 +45,11 @@ public class AddressBookTest {
         AddressBookManager addressBookManager = new AddressBookManager();
         boolean result = addressBookManager.writeToFile(personDetails,filePath);
         Assert.assertTrue(true);
+    }
+
+    @Test
+    public void ForPersonDetails_checkIfFileIsAvailable() throws IOException {
+       boolean result = obj.isFileAvailable(filePath,"Details.json");
+       Assert.assertTrue(result);
     }
 }
