@@ -110,5 +110,10 @@ public class AddressBookTest {
         Assert.assertTrue(true);
     }
 
+    @Test
+    public void forPersonDetails_sortRecordsBasedOnZipCode() throws FileNotFoundException {
+        boolean result = obj.sortByZip("13");
+        Assert.assertTrue(true);
+    }
 
 }

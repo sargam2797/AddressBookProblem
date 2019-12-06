@@ -140,8 +140,20 @@ AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public void sortByZip() {
-
+    public boolean sortByZip(String zip) throws FileNotFoundException {
+        List<PersonDetails> list = readFile(filePath);
+        for (int i =0; i < list.size()-1; i++) {
+            for (int j = 0; j < list.size()-i-1; j++) {
+                if (list.get(j).getAddressDetailsObject().getZip().compareTo(list.get(j+1).
+                        getAddressDetailsObject().getZip()) > 0) {
+                    PersonDetails temp = list.get(j);
+                    list.set(j,list.get(j+1));
+                    list.set(j+1,temp);
+                }
+            }
+        }
+        writeToFile(list,filePath);
+        return true;
     }
 
 }

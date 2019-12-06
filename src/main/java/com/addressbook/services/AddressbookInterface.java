@@ -25,7 +25,7 @@ public interface AddressbookInterface {
 
     public boolean sortByName(String firstName) throws FileNotFoundException;
 
-    public void sortByZip();
+    public boolean sortByZip(String zip) throws FileNotFoundException;
 
 
 }
