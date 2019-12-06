@@ -21,7 +21,7 @@ public interface AddressbookInterface {
     public String editPerson( String lastName,String add ,String contactNo, AddressDetails addressDetails, String
             filePath) throws FileNotFoundException;
 
-    public String deletePerson(String firstName, String fileName) throws FileNotFoundException;
+    public String deletePerson(String contactNo, String fileName) throws FileNotFoundException;
 
     public boolean sortByName(String firstName) throws FileNotFoundException;
 

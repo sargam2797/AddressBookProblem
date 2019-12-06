@@ -93,7 +93,8 @@ AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public String editPerson(String lastName,String add,String contactNo, AddressDetails addressDetails, String filePath) throws FileNotFoundException {
+    public String editPerson(String lastName,String add,String contactNo, AddressDetails addressDetails,
+                             String filePath) throws FileNotFoundException {
         List<PersonDetails> list = readFile(filePath);
         for (int i = 0; i < list.size(); i++) {
             if(contactNo.equalsIgnoreCase(list.get(i).getContact())) {
@@ -108,19 +109,21 @@ AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public String deletePerson(String firstName, String fileName) throws FileNotFoundException {
+    public String deletePerson(String contactNo, String fileName) throws FileNotFoundException {
         List<PersonDetails> list = readFile(filePath);
         List<PersonDetails> anotherList = new ArrayList();
+
         for (int i = 0; i < list.size(); i++) {
-            if(!firstName.equalsIgnoreCase(list.get(i).getFirstName())) {
+            if (!contactNo.equalsIgnoreCase(list.get(i).getContact())) {
                 anotherList.add(list.get(i));
-            }
-            else {
+                writeToFile(anotherList, filePath);
+            } else {
+                list.remove(list.get(i));
+                writeToFile(list, filePath);
                 return "record removed successfully";
             }
-            writeToFile(anotherList,filePath);
         }
-        return "record not present to remove";
+        return "no record found to remove";
     }
 
     @Override

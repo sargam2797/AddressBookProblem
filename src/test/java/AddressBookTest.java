@@ -43,8 +43,8 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile() throws IOException {
-        PersonDetails personDetails = obj.addPerson("sargam","pandey","kharadi","7777777777",
-                new AddressDetails("pune", "mah","14"));
+        PersonDetails personDetails = obj.addPerson("sargam","pandey","xyz","7777777777",
+                new AddressDetails("pune", "mah","11"));
         Assert.assertTrue(true);
     }
 
@@ -73,15 +73,15 @@ public class AddressBookTest {
     }
 
     @Test
-    public void ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue() throws IOException {
-        String result = obj.deletePerson("sargam","Details.json");
+    public void ForPersonDetails_deletePersonMethod_ShouldReturnTrue_ifRecordExists() throws IOException {
+        String result = obj.deletePerson("7777777777","Details.json");
         Assert.assertEquals("record removed successfully",result);
     }
 
     @Test
-    public void ForPersonDetails_deleteParticularRecordFromFileShouldReturnFalse_ifNotPresent() throws IOException {
+    public void ForPersonDetails_deleteParsonMethod_ShouldReturnFalse_ifNotPresent() throws IOException {
         String result = obj.deletePerson("pqr","Details.json");
-        Assert.assertEquals("record not present to remove",result);
+        Assert.assertEquals("no record found to remove",result);
     }
 
     @Test

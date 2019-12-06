@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T12:06:47" hostname="FH400" time="0.127">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T13:04:05" hostname="FH400" time="0.267">
   <properties/>
-  <testcase name="forPersonDetails_sortRecordsBasedOnZipCode" classname="AddressBookTest" time="0.127"/>
+  <testcase name="ForPersonDetails_deleteParticularRecordFromFileShouldReturnFalse_ifNotPresent" classname="AddressBookTest" time="0.267"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
