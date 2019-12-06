@@ -82,4 +82,10 @@ public class AddressBookTest {
         String result = obj.deletePerson("pqr","Details.json");
         Assert.assertEquals("record not present to remove",result);
     }
+
+    @Test
+    public void ForPersonDetails_deletesFileWhenAlreadyPresent() throws IOException {
+        String result = obj.deleteFile(destinationFile,"Details2.json");
+        Assert.assertEquals("file deleted successfully",result);
+    }
 }

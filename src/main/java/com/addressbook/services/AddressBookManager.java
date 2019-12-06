@@ -71,7 +71,7 @@ public class AddressBookManager implements AddressbookInterface {
         String fullPath = destinationFile + fileName;
         File file = new File(fullPath);
         if (file.delete())
-            return "file deleted";
+            return "file deleted successfully";
         else
             return "file not deleted";
     }
