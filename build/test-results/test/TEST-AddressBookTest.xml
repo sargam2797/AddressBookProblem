@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T09:57:01" hostname="FH400" time="0.002">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-12-06T10:12:11" hostname="FH400" time="0.192">
   <properties/>
-  <testcase name="ForPersonDetails_deletesFileWhenAlreadyPresent" classname="AddressBookTest" time="0.002"/>
+  <testcase name="ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile" classname="AddressBookTest" time="0.192"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

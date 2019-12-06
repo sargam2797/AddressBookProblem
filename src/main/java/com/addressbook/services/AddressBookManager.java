@@ -73,7 +73,7 @@ public class AddressBookManager implements AddressbookInterface {
         if (file.delete())
             return "file deleted successfully";
         else
-            return "file not deleted";
+            return "file not found to delete";
     }
 
     public boolean writeToFile(List<PersonDetails> personDetails, String filePath) {
