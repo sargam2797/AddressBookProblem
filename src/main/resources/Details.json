@@ -1,1 +1,46 @@
-[{"firstName":"sakshi","lastName":"bhosale","address":"gurupeth","contact":"1234","addressDetailsObject":{"city":"pune","state":"mah","zip":"13"}},{"firstName":"ayush","lastName":"saraf","address":"abc","contact":"1234567890","addressDetailsObject":{"city":"pune","state":"mah","zip":"14"}}]
+[
+  {
+    "firstName": "sakshi",
+    "lastName": "bhosale",
+    "address": "gurupeth",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "13"
+    }
+  },
+  {
+    "firstName": "ayush",
+    "lastName": "saraf",
+    "address": "abc",
+    "contact": "1234567890",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "14"
+    }
+  },
+  {
+    "firstName": "abc",
+    "lastName": "pnewcki",
+    "address": "xyz",
+    "contact": "5555555555",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "19"
+    }
+  },
+  {
+    "firstName": "lmn",
+    "lastName": "pnewcki",
+    "address": "pqr",
+    "contact": "6666666666",
+    "addressDetailsObject": {
+      "city": "mumbai",
+      "state": "mah",
+      "zip": "24"
+    }
+  }
+]

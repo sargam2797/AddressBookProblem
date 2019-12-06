@@ -43,8 +43,8 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile() throws IOException {
-        PersonDetails personDetails = obj.addPerson("sargam","pandey","xyz","7777777777",
-                new AddressDetails("pune", "mah","11"));
+        PersonDetails personDetails = obj.addPerson("lmn","pnewcki","pqr","6666666666",
+                new AddressDetails("mumbai", "mah","24"));
         Assert.assertTrue(true);
     }
 
@@ -68,7 +68,7 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_doesNotCreateFileIfAlreadyExists() throws IOException {
-        String result = obj.createNewFile(destinationFile,"Details2.json");
+        String result = obj.createNewFile(destinationFile,"Details.json");
         Assert.assertEquals("False",result);
     }
 
