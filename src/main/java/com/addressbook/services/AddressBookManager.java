@@ -29,7 +29,7 @@ AddressBookManager implements AddressbookInterface {
         return personDetails;
     }
 
-    private List<PersonDetails> readFile(String filePath) throws FileNotFoundException {
+    private List<PersonDetails> readFile(String filePath) {
 
         File file = new File(filePath);
 
@@ -93,7 +93,7 @@ AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public String editPerson(String lastName,String add,String contactNo, AddressDetails addressDetails, String filePath) throws FileNotFoundException {
+    public String editPerson(String lastName,String add,String contactNo, AddressDetails addressDetails, String filePath) {
         List<PersonDetails> list = readFile(filePath);
         for (int i = 0; i < list.size(); i++) {
             if(contactNo.equalsIgnoreCase(list.get(i).getContact())) {
@@ -108,7 +108,7 @@ AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public String deletePerson(String firstName, String fileName) throws FileNotFoundException {
+    public String deletePerson(String firstName, String fileName)  {
         List<PersonDetails> list = readFile(filePath);
         List<PersonDetails> anotherList = new ArrayList();
         for (int i = 0; i < list.size(); i++) {
@@ -124,7 +124,7 @@ AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public boolean sortByName(String firstName) throws FileNotFoundException {
+    public boolean sortByName(String firstName)  {
         List<PersonDetails> list = readFile(filePath);
         for (int i =0; i < list.size()-1; i++) {
             for (int j = 0; j < list.size()-i-1; j++) {
@@ -140,7 +140,7 @@ AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public boolean sortByZip(String zip) throws FileNotFoundException {
+    public boolean sortByZip(String zip)  {
         List<PersonDetails> list = readFile(filePath);
         for (int i =0; i < list.size()-1; i++) {
             for (int j = 0; j < list.size()-i-1; j++) {
