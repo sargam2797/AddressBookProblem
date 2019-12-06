@@ -105,7 +105,7 @@ public class AddressBookTest {
     }
 
     @Test
-    public void forPersonDetails_doesNotEditsRecords_IfContactNotFound() throws FileNotFoundException {
+    public void forPersonDetails_sortRecordsBasedOnFirstName() throws FileNotFoundException {
         boolean result = obj.sortByName("adesh");
         Assert.assertTrue(true);
     }
