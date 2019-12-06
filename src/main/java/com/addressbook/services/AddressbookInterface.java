@@ -18,7 +18,8 @@ public interface AddressbookInterface {
 
     public String deleteFile(String destinationFolder, String fileName) throws IOException;
 
-    public void editPerson();
+    public String editPerson( String lastName,String add ,String contactNo, AddressDetails addressDetails, String
+            filePath) throws FileNotFoundException;
 
     public String deletePerson(String firstName, String fileName) throws FileNotFoundException;
 

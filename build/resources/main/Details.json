@@ -1,1 +1,35 @@
-[{"firstName":"sakshi","lastName":"bhosale","address":"kharadi","contact":"1234","addressDetailsObject":{"city":"pune","state":"mah","zip":"11"}},{"firstName":"sargam","lastName":"pandey","address":"kharadi","contact":"8888888888","addressDetailsObject":{"city":"pune","state":"mah","zip":"14"}}]
+[
+  {
+    "firstName": "sakshi",
+    "lastName": "bhosale",
+    "address": "gurupeth",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "13"
+    }
+  },
+  {
+    "firstName": "adesh",
+    "lastName": "bhosale",
+    "address": "kharadi",
+    "contact": "9999999999",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "13"
+    }
+  },
+  {
+    "firstName": "sargam",
+    "lastName": "pandey",
+    "address": "kharadi",
+    "contact": "7777777777",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "14"
+    }
+  }
+]

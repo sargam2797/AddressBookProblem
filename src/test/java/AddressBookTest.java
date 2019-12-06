@@ -5,6 +5,7 @@ import com.addressbook.services.AddressbookInterface;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -42,7 +43,7 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile() throws IOException {
-        PersonDetails personDetails = obj.addPerson("adesh","pandey","kharadi","1234567890",
+        PersonDetails personDetails = obj.addPerson("sargam","pandey","kharadi","7777777777",
                 new AddressDetails("pune", "mah","14"));
         Assert.assertTrue(true);
     }
@@ -73,7 +74,7 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue() throws IOException {
-        String result = obj.deletePerson("sakshi","Details.json");
+        String result = obj.deletePerson("sargam","Details.json");
         Assert.assertEquals("record removed successfully",result);
     }
 
@@ -93,5 +94,13 @@ public class AddressBookTest {
     public void ForPersonDetails_deletesFileWhenAlreadyPresentShouldReturnFalse_ifNotPresent() throws IOException {
         String result = obj.deleteFile(destinationFile,"abc.json");
         Assert.assertEquals("file not found to delete",result);
+    }
+
+    @Test
+    public void forPersonDetails_editRecordsSearchedByContact() throws FileNotFoundException {
+        String result = obj.editPerson("pandey","abc","9999999999",new AddressDetails(
+                "hyderabad",
+                "tel","23"),filePath);
+        Assert.assertEquals("record edited successfully",result);
     }
 }

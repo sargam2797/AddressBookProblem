@@ -92,8 +92,18 @@ public class AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public void editPerson() {
-
+    public String editPerson(String lastName,String add,String contactNo, AddressDetails addressDetails, String filePath) throws FileNotFoundException {
+        List<PersonDetails> list = readFile(filePath);
+        for (int i = 0; i < list.size(); i++) {
+            if(contactNo.equalsIgnoreCase(list.get(i).getContact())) {
+                list.get(i).setLastName(lastName);
+              list.get(i).setAddress(add);
+                list.get(i).setAddressDetailsObject(addressDetails);
+                writeToFile(list,filePath);
+                return "record edited successfully";
+            }
+        }
+        return "no record found to edit";
     }
 
     @Override
