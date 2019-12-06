@@ -12,7 +12,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressBookManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressBookManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressbookInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressbookInterface.class" afterDir="false" />
@@ -23,7 +22,6 @@
       <change beforePath="$PROJECT_DIR$/build/resources/main/Details.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/Details.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-AddressBookTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-AddressBookTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/addressbook/models/PersonDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/addressbook/models/PersonDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressBookManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressbookInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressbookInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Details.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Details.json" afterDir="false" />
@@ -84,7 +82,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AddressBookTest.ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile">
+  <component name="RunManager" selected="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnfalse_ifNotPresent">
     <configuration name="AddressBookTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -125,12 +123,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AddressBookTest.ForPersonDetails_checkIfFileIsCreated" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddressBookTest.ForPersonDetails_deleteParticularRecordFromFile" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AddressBookTest.ForPersonDetails_checkIfFileIsCreated&quot;" />
+        <option name="scriptParameters" value="--tests &quot;AddressBookTest.ForPersonDetails_deleteParticularRecordFromFile&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -145,12 +143,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AddressBookTest.ForPersonDetails_checkIfFileIsUnAvailable" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AddressBookTest.ForPersonDetails_checkIfFileIsUnAvailable&quot;" />
+        <option name="scriptParameters" value="--tests &quot;AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -165,12 +163,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="AddressBookTest.ForPersonDetails_doesNotCreateFileIfAlreadyExists" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnfalse_ifNotPresent" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;AddressBookTest.ForPersonDetails_doesNotCreateFileIfAlreadyExists&quot;" />
+        <option name="scriptParameters" value="--tests &quot;AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnfalse_ifNotPresent&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -187,11 +185,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnfalse_ifNotPresent" />
         <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile" />
+        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue" />
+        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFile" />
         <item itemvalue="Gradle.AddressBookTest" />
-        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_doesNotCreateFileIfAlreadyExists" />
-        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_checkIfFileIsCreated" />
-        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_checkIfFileIsUnAvailable" />
       </list>
     </recent_temporary>
   </component>
@@ -223,5 +221,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/AddressBookTest.java</url>
+          <line>43</line>
+          <properties class="AddressBookTest" method="ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

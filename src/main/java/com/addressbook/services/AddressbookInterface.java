@@ -3,6 +3,7 @@ package com.addressbook.services;
 import com.addressbook.models.AddressDetails;
 import com.addressbook.models.PersonDetails;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -15,9 +16,11 @@ public interface AddressbookInterface {
 
     public String createNewFile(String destinationFolder, String fileName) throws IOException;
 
+    public String deleteFile(String destinationFolder, String fileName) throws IOException;
+
     public void editPerson();
 
-    public void deletePerson();
+    public String deletePerson(String firstName, String fileName) throws FileNotFoundException;
 
     public void sortByName();
 
