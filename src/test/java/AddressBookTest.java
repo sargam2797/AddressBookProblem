@@ -6,11 +6,13 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.List;
 
 public class AddressBookTest {
 
     AddressbookInterface obj = new AddressBookManager();
-    static String filePath = "/home/user/IdeaProjects/AddressBookProblem/src/main/resources/";
+    static String filePath = "/home/user/IdeaProjects/AddressBookProblem/src/main/resources/Details.json";
+    static String destinationFile = "/home/user/IdeaProjects/AddressBookProblem/src/main/resources/";
 
     @Test
     public void givenPersonDetailsClass_CheckIfObjectsAreInitialised() {
@@ -40,15 +42,14 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile() throws IOException {
-        PersonDetails personDetails = obj.addPerson("sargam","pandey","kharadi","1234",
-                new AddressDetails("pune", "mah","14"));
-        boolean result = obj.writeToFile(personDetails,filePath);
+        PersonDetails personDetails = obj.addPerson("ayush","saraf","rastapeth","1234",
+                new AddressDetails("pune", "mah","11"));
         Assert.assertTrue(true);
     }
 
     @Test
     public void ForPersonDetails_checkIfFileIsAvailable() throws IOException {
-       boolean result = obj.isFileAvailable(filePath,"Details.json");
+       boolean result = obj.isFileAvailable(destinationFile,"Details.json");
        Assert.assertTrue(result);
     }
 
@@ -60,13 +61,13 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_checkIfFileIsCreated() throws IOException {
-        String result = obj.createNewFile(filePath,"Details2.json");
+        String result = obj.createNewFile(destinationFile,"Details2.json");
         Assert.assertEquals("True",result);
     }
 
     @Test
     public void ForPersonDetails_doesNotCreateFileIfAlreadyExists() throws IOException {
-        String result = obj.createNewFile(filePath,"Details2.json");
+        String result = obj.createNewFile(destinationFile,"Details2.json");
         Assert.assertEquals("False",result);
     }
 

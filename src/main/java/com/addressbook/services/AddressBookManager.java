@@ -2,14 +2,15 @@ package com.addressbook.services;
 
 import com.addressbook.models.AddressDetails;
 import com.addressbook.models.PersonDetails;
+import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.google.gson.JsonParseException;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 public class AddressBookManager implements AddressbookInterface {
@@ -21,12 +22,27 @@ public class AddressBookManager implements AddressbookInterface {
     public PersonDetails addPerson(String fname, String lname, String add, String contact,
                                    AddressDetails addressDetails) throws IOException {
         PersonDetails personDetails = new PersonDetails(fname,lname,add,contact,addressDetails);
+        List<PersonDetails> list= readFile(filePath);
         list.add(personDetails);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(list.get(i));
-           writeToFile(personDetails,filePath);
-        }
+        writeToFile(list,filePath);
         return personDetails;
+    }
+
+    private List<PersonDetails> readFile(String filePath) throws FileNotFoundException {
+
+        File file = new File(filePath);
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            List<PersonDetails> list = new ArrayList(Arrays.asList(mapper.readValue(file, PersonDetails[].class)));
+            return list;
+        } catch (JsonParseException e) {
+            e.printStackTrace();
+        } catch (JsonMappingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 
     @Override
@@ -41,8 +57,8 @@ public class AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public String createNewFile(String destinationFolder, String fileName) throws IOException {
-        String fullPath = destinationFolder + fileName;
+    public String createNewFile(String destinationFile, String fileName) throws IOException {
+        String fullPath = destinationFile + fileName;
         File file = new File(fullPath);
         if (file.createNewFile())
             return "True";
@@ -50,10 +66,10 @@ public class AddressBookManager implements AddressbookInterface {
             return "False";
     }
 
-    public boolean writeToFile(PersonDetails personDetails, String filePath) {
+    public boolean writeToFile(List<PersonDetails> personDetails, String filePath) {
         String JSON_FILE_PATH = filePath;
         Gson gson = new Gson();
-        String json = gson.toJson(list);
+        String json = gson.toJson(personDetails);
         FileWriter writer = null;
         try {
             writer = new FileWriter(JSON_FILE_PATH);
@@ -64,8 +80,6 @@ public class AddressBookManager implements AddressbookInterface {
         }
         return true;
     }
-
-
 
     @Override
     public void editPerson() {

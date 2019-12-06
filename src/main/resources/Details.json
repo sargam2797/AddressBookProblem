@@ -1,1 +1,68 @@
-[{"firstName":"sargam","lastName":"pandey","address":"kharadi","contact":"1234","addressDetailsObject":{"city":"pune","state":"mah","zip":"14"}}]
+[
+  {
+    "firstName": "abc",
+    "lastName": "pandey",
+    "address": "kharadi",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "14"
+    }
+  },
+  {
+    "firstName": "abc",
+    "lastName": "pandey",
+    "address": "kharadi",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "14"
+    }
+  },
+  {
+    "firstName": "abc",
+    "lastName": "pandey",
+    "address": "kharadi",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "14"
+    }
+  },
+  {
+    "firstName": "abc",
+    "lastName": "pandey",
+    "address": "kharadi",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "14"
+    }
+  },
+  {
+    "firstName": "sargam",
+    "lastName": "pandey",
+    "address": "kharadi",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "14"
+    }
+  },
+  {
+    "firstName": "ayush",
+    "lastName": "saraf",
+    "address": "rastapeth",
+    "contact": "1234",
+    "addressDetailsObject": {
+      "city": "pune",
+      "state": "mah",
+      "zip": "11"
+    }
+  }
+]
