@@ -14,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressBookManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressBookManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressbookInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/addressbook/services/AddressbookInterface.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/test/AddressBookTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/test/AddressBookTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/AddressBookTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/AddressBookTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
@@ -23,7 +22,6 @@
       <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-AddressBookTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/TEST-AddressBookTest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressBookManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressBookManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressbookInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/addressbook/services/AddressbookInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/Details.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Details.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/AddressBookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/AddressBookTest.java" afterDir="false" />
     </list>
@@ -82,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnfalse_ifNotPresent">
+  <component name="RunManager" selected="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue">
     <configuration name="AddressBookTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -185,9 +183,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnfalse_ifNotPresent" />
-        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile" />
         <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue" />
+        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile" />
+        <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFileShouldReturnfalse_ifNotPresent" />
         <item itemvalue="Gradle.AddressBookTest.ForPersonDetails_deleteParticularRecordFromFile" />
         <item itemvalue="Gradle.AddressBookTest" />
       </list>
@@ -221,19 +219,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/AddressBookTest.java</url>
-          <line>43</line>
-          <properties class="AddressBookTest" method="ForPersonDetails_checkIfFieldsAreGettingAddedToJsonFile">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

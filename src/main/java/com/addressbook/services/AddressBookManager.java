@@ -109,7 +109,7 @@ public class AddressBookManager implements AddressbookInterface {
             }
             writeToFile(anotherList,filePath);
         }
-        return "record not removed";
+        return "record not present to remove";
     }
 
     @Override

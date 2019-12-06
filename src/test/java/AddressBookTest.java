@@ -73,8 +73,13 @@ public class AddressBookTest {
 
     @Test
     public void ForPersonDetails_deleteParticularRecordFromFileShouldReturnTrue() throws IOException {
-        String result = obj.deletePerson("boo","Details.json");
+        String result = obj.deletePerson("sakshi","Details.json");
         Assert.assertEquals("record removed successfully",result);
     }
 
+    @Test
+    public void ForPersonDetails_deleteParticularRecordFromFileShouldReturnFalse_ifNotPresent() throws IOException {
+        String result = obj.deletePerson("pqr","Details.json");
+        Assert.assertEquals("record not present to remove",result);
+    }
 }
