@@ -12,7 +12,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class AddressBookManager implements AddressbookInterface {
+public class
+AddressBookManager implements AddressbookInterface {
     static ObjectMapper mapper = new ObjectMapper();
 
     List<PersonDetails> list = new ArrayList<>();
@@ -123,8 +124,19 @@ public class AddressBookManager implements AddressbookInterface {
     }
 
     @Override
-    public void sortByName() {
-
+    public boolean sortByName(String firstName) throws FileNotFoundException {
+        List<PersonDetails> list = readFile(filePath);
+        for (int i =0; i < list.size()-1; i++) {
+            for (int j = 0; j < list.size()-i-1; j++) {
+                if (list.get(j).getFirstName().compareTo(list.get(j+1).getFirstName()) > 0) {
+                    PersonDetails temp = list.get(j);
+                    list.set(j,list.get(j+1));
+                    list.set(j+1,temp);
+                }
+            }
+        }
+        writeToFile(list,filePath);
+        return true;
     }
 
     @Override

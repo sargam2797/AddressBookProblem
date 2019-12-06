@@ -106,9 +106,9 @@ public class AddressBookTest {
 
     @Test
     public void forPersonDetails_doesNotEditsRecords_IfContactNotFound() throws FileNotFoundException {
-        String result = obj.editPerson("pandey","abc","55555",new AddressDetails(
-                "hyderabad",
-                "tel","23"),filePath);
-        Assert.assertEquals("no record found to edit",result);
+        boolean result = obj.sortByName("adesh");
+        Assert.assertTrue(true);
     }
+
+
 }

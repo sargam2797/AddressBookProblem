@@ -23,7 +23,7 @@ public interface AddressbookInterface {
 
     public String deletePerson(String firstName, String fileName) throws FileNotFoundException;
 
-    public void sortByName();
+    public boolean sortByName(String firstName) throws FileNotFoundException;
 
     public void sortByZip();
 
