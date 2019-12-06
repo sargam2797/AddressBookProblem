@@ -1,16 +1,5 @@
 [
   {
-    "firstName": "adesh",
-    "lastName": "pandey",
-    "address": "abc",
-    "contact": "9999999999",
-    "addressDetailsObject": {
-      "city": "hyderabad",
-      "state": "tel",
-      "zip": "23"
-    }
-  },
-  {
     "firstName": "sakshi",
     "lastName": "bhosale",
     "address": "gurupeth",
@@ -30,6 +19,17 @@
       "city": "pune",
       "state": "mah",
       "zip": "14"
+    }
+  },
+  {
+    "firstName": "adesh",
+    "lastName": "pandey",
+    "address": "abc",
+    "contact": "9999999999",
+    "addressDetailsObject": {
+      "city": "hyderabad",
+      "state": "tel",
+      "zip": "23"
     }
   }
 ]
