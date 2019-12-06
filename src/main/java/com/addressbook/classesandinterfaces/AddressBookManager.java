@@ -1,7 +1,7 @@
-package com.addressbook.services;
+package com.addressbook.classesandinterfaces;
 
-import com.addressbook.models.AddressDetails;
-import com.addressbook.models.PersonDetails;
+import com.addressbook.pojoclasses.AddressDetails;
+import com.addressbook.pojoclasses.PersonDetails;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;

@@ -1,7 +1,7 @@
-package com.addressbook.services;
+package com.addressbook.classesandinterfaces;
 
-import com.addressbook.models.AddressDetails;
-import com.addressbook.models.PersonDetails;
+import com.addressbook.pojoclasses.AddressDetails;
+import com.addressbook.pojoclasses.PersonDetails;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

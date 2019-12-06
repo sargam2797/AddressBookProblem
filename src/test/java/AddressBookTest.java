@@ -1,13 +1,12 @@
-import com.addressbook.models.AddressDetails;
-import com.addressbook.models.PersonDetails;
-import com.addressbook.services.AddressBookManager;
-import com.addressbook.services.AddressbookInterface;
+import com.addressbook.pojoclasses.AddressDetails;
+import com.addressbook.pojoclasses.PersonDetails;
+import com.addressbook.classesandinterfaces.AddressBookManager;
+import com.addressbook.classesandinterfaces.AddressbookInterface;
 import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.List;
 
 public class AddressBookTest {
 

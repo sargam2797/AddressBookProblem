@@ -1,4 +1,4 @@
-package com.addressbook.models;
+package com.addressbook.pojoclasses;
 
 public class AddressDetails {
     private String city;
